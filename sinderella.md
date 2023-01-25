@@ -33,7 +33,7 @@ Thanks to all of the participants!
 |75%|7.88|7.38|8.25|8.50|7.00|5.00|8.38|7.00|7.88|5.88|6.00|7.38|6.75|7.75|5.88|
 |max|8.50|8.00|9.00|9.00|8.50|8.00|9.20|8.00|9.70|8.00|8.00|8.00|8.00|9.00|7.00|
 
-# Song-wise
+## Song-wise
 
 | |Taste of Death|Wanted, Wasted|I’m Greedy|Internet Brain Rot|NEZUMI Scheme|soul food|CRINGECORE|Dance Past Midnight|Death Sentence|glass slipper|
 |-|-|-|-|-|-|-|-|-|-|-|
