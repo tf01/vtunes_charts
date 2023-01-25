@@ -74,7 +74,8 @@ dtype: float64
 ## Person-wise
 <img src="sinderella/box.png"/>
 
-## Person-wise (excluding outliers)
+## Person-wise (with outliers)
+This plot ignores the formula used to calculate whether a particular point is an outlier.
 <img src="sinderella/box_outliers.png"/>
 
 ## Song-wise
