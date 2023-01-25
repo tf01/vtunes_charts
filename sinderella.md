@@ -22,8 +22,8 @@ Thanks to all of the participants!
 # Data Description
 ## Person-wise
 
-|Shoober|Sporky|Shirpless|RandomThorn|RC|Tommy|Kue|Shebani|Statsky|Schyph|Maladjusted Platypus|Nico252|evening|ert|Ruby|
-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| |Shoober|Sporky|Shirpless|RandomThorn|RC|Tommy|Kue|Shebani|Statsky|Schyph|Maladjusted Platypus|Nico252|evening|ert|Ruby|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |count|10.00|10.00|10.00|10.00|9.00|10.00|10.00|10.00|10.00|10.00|10.00|10.00|10.00|10.00|10.00|
 |mean|6.50|6.20|6.86|7.75|5.00|4.60|6.87|5.80|5.62|4.80|4.70|5.70|5.10|6.20|4.95|
 |std|2.17|1.83|1.73|1.14|2.38|1.96|1.98|1.69|2.88|2.29|2.36|1.87|2.02|1.99|1.23|
@@ -35,7 +35,7 @@ Thanks to all of the participants!
 
 # Song-wise
 
-|Song|Taste of Death|Wanted, Wasted|I’m Greedy|Internet Brain Rot|NEZUMI Scheme|soul food|CRINGECORE|Dance Past Midnight|Death Sentence|glass slipper|
+| |Taste of Death|Wanted, Wasted|I’m Greedy|Internet Brain Rot|NEZUMI Scheme|soul food|CRINGECORE|Dance Past Midnight|Death Sentence|glass slipper|
 |-|-|-|-|-|-|-|-|-|-|-|
 |count|14.00|15.00|15.00|15.00|15.00|15.00|15.00|15.00|15.00|15.00|
 |mean|5.49|6.63|2.39|5.43|6.40|5.76|5.16|7.48|4.77|8.28|
