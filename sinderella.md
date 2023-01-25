@@ -1,6 +1,6 @@
 # Sinderella
 
-Here are the result for Calliope Mori's *Sinderella*!
+Here are the results for Calliope Mori's *Sinderella*!
 
 Thanks to all of the participants!
 
