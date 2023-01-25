@@ -1,0 +1,9 @@
+remote_theme: pages-themes/dinky@v0.2.0
+title: Bias Tracker
+description: Tracking all biases here.
+plugins:
+  - jekyll-relative-links
+  - jekyll-remote-theme
+relative_links:
+  enabled: true
+  collections: true
