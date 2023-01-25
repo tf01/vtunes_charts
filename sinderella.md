@@ -4,8 +4,6 @@ Here are the result for Calliope Mori's *Sinderella*!
 
 Thanks to all of the participants!
 
-[Click here to go back to the index...](../index.md)
-
 # Raw Scores
 
 |Song|Shoober|Sporky|Shirpless|RandomThorn|RC|Tommy|Kue|Shebani|Statsky|Schyph|Maladjusted Platypus|Nico252|evening|ert|Ruby|
