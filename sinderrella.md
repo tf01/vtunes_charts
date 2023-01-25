@@ -62,20 +62,20 @@ dtype: float64
 
 # Histograms
 ## Person-wise
-<img src="hist.png"/>
+<img src="sinderella/hist.png"/>
 
 ## Songwise
-<img src="hist_songs.png"/>
+<img src="sinderella/hist_songs.png"/>
 
 ## Entire dataset
-<img src="hist_all.png"/>
+<img src="sinderella/hist_all.png"/>
 
 # Boxplots
 ## Person-wise
-<img src="box.png"/>
+<img src="sinderella/box.png"/>
 
 ## Person-wise (excluding outliers)
-<img src="box_outliers.png"/>
+<img src="sinderella/box_outliers.png"/>
 
 ## Songwise
-<img src="box_songs.png"/>
+<img src="sinderella/box_songs.png"/>
