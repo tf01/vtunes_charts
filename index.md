@@ -2,6 +2,6 @@ Storing and cataloguing the results of listening and rating albums in the RC ser
 
 Use this site as an easy way to view the results! Let me know if something's wrong on the page, and I'll fix it.
 
-[Mori Calliope: Sinderella](sinderella.md)
+[Mori Calliope: Sinderella](sinderella/sinderella.md)
 
-[Hoshimachi Suisei: SPECTER](specter.md)
+[Hoshimachi Suisei: Specter](specter/specter.md)
