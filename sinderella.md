@@ -64,7 +64,7 @@ dtype: float64
 ## Person-wise
 <img src="sinderella/hist.png"/>
 
-## Songwise
+## Song-wise
 <img src="sinderella/hist_songs.png"/>
 
 ## Entire dataset
@@ -77,5 +77,5 @@ dtype: float64
 ## Person-wise (excluding outliers)
 <img src="sinderella/box_outliers.png"/>
 
-## Songwise
+## Song-wise
 <img src="sinderella/box_songs.png"/>
