@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 # %% get data
 # https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
 data = p.read_csv('sheet.csv', index_col="Song")
-data.head()
 
-# %% drop saph (incomplete)
 dropping = ["Saph"]
 data = data.drop(labels=dropping, axis='columns')
-data.head()
+
+# print all of the rows
+data.head(20)
 
 # %% Describe the data
 # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
@@ -27,10 +27,16 @@ data_stack = data.stack(dropna=True)
 data_stack.describe()
 
 
-# %%
-# histograms
+# %% histograms
 # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html
 ax = data.hist(figsize=(15, 15), sharey=True, sharex=True)
+
+# %% histogram of songs
+ax = data_songs.hist(figsize=(15, 15), sharey=True, sharex=True)
+
+# %% histogram of everything
+ax = data_stack.hist(figsize=(10, 10))
+
 
 # %% boxplots
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html#matplotlib.pyplot.boxplot
