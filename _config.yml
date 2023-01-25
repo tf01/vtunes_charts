@@ -1,6 +1,6 @@
 remote_theme: pages-themes/dinky@v0.2.0
-title: Bias Tracker
-description: Tracking all biases here.
+title: Vtunes Charts
+description: All data hand-picked from the RC discord server.
 plugins:
   - jekyll-relative-links
   - jekyll-remote-theme
