@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # %% get data
 # https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
-data = p.read_csv('sheet.csv', index_col="Song")
+data = p.read_csv('sinderella.csv', index_col="Song")
 
 dropping = ["Saph"]
 data = data.drop(labels=dropping, axis='columns')
