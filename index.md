@@ -1,5 +1,5 @@
 <style>
-a {
+.album-links a {
     font-size: 40pt;
 }
 </style>
@@ -9,6 +9,10 @@ Storing and cataloguing the results of listening and rating albums in the RC ser
 
 Let me know if something's wrong on the page, and I'll fix it.
 
+<div class="album-links">
+
 [Mori Calliope: *Sinderella*](sinderella.md)
 
 [Hoshimachi Suisei: *Specter*](specter.md)
+
+</div>
