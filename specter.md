@@ -1,3 +1,9 @@
+<style>
+  .plot_figure {
+    max-width: 100vw;
+    width: 200%;
+  }
+</style>
 # Specter
 
 Here are the results for Hoshimachi Suisei's *Specter*!
@@ -508,7 +514,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
   </tbody>
 </table>
 
-<img src="specter/box-desc-person.png">
+<img class="plot_figure" src="specter/box-desc-person.png"/>
 
 ## Song-wise
 
@@ -645,7 +651,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
   </tbody>
 </table>
 
-<img src="specter/box-desc-songs.png">
+<img class="plot_figure" src="specter/box-desc-songs.png"/>
 
 ## Entire dataset
 
@@ -695,21 +701,21 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
 
 # Boxplots
 ## Person-wise
-<img src="specter/box-person.png">
+<img class="plot_figure" src="specter/box-person.png"/>
 
 ## Song-wise
-<img src="specter/box-songs.png">
+<img class="plot_figure" src="specter/box-songs.png"/>
 
 ## Entire dataset
-<img src="specter/box-all.png">
+<img class="plot_figure" src="specter/box-all.png"/>
 
 # Histograms
 
 ## Person-wise
-<img src="specter/hist-person.png">
+<img class="plot_figure" src="specter/hist-person.png"/>
 
 ## Song-wise
-<img src="specter/hist-songs.png">
+<img class="plot_figure" src="specter/hist-songs.png"/>
 
 ## Entire dataset
-<img src="specter/hist-all.png">
+<img class="plot_figure" src="specter/hist-all.png"/>
