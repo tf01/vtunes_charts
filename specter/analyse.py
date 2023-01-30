@@ -38,8 +38,33 @@ data_songs_description = data_songs.describe()
 write_to_file('data-songs-desc.html', data_songs_description.to_html())
 
 # %% for info on entire album, collapse into a single column
-data_stack = data.stack(dropna=True).to_frame()
-write_to_file('data-all.html', data_stack.describe().to_html())
+data_stack = data.stack(dropna=True)
+data_stack.name = 'Person'
+write_to_file('data-all.html', data_stack.to_frame().describe().to_html())
+
+# %% sorted line graph of all scores
+data_stack_sorted = data_stack.sort_values()
+ax = data_stack_sorted.plot(figsize=(15, 15), label='Sorted scores')
+# https://stackoverflow.com/questions/37234163/how-to-add-a-line-of-best-fit-to-scatter-plot
+# estimate first degree polynomial
+xvals = range(len(data_stack_sorted))
+z = np.polyfit(range(len(data_stack_sorted)), data_stack_sorted, deg=1)
+p = np.poly1d(z)
+z2 = np.polyfit(range(len(data_stack_sorted)), data_stack_sorted, deg=2)
+p2 = np.polyval(z2, xvals)
+z3 = np.polyfit(range(len(data_stack_sorted)), data_stack_sorted, deg=3)
+p3 = np.polyval(z3, xvals)
+
+# ax.axline((0, z[1]), slope=z[0], c='red', linestyle='--', label='1st degree polnomial fit')
+ax.plot(xvals, p(xvals), c='red', linestyle='--', label='1st degree polynomial fit')
+ax.plot(xvals, p2, c='green', linestyle='--', label='2nd degree polynomial fit')
+ax.plot(xvals, p3, c='blue', linestyle='--', label='3rd degree polynomial fit')
+
+ax.set_xlabel('(Song, Judge)')
+ax.set_ylabel('Score')
+ax.set_title('Scores w/ regression lines')
+ax.legend()
+ax.figure.savefig('linear-plot-reg.png')
 
 # %% histograms
 # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html
@@ -57,7 +82,7 @@ ax[0][0].figure.savefig('hist-all.png')
 # %% boxplots
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html#matplotlib.pyplot.boxplot
 ax = data.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True)
-ax.hlines(8.0, 1, len(data.columns), colors=['red'], linestyles='dotted', label='Axe murder cutoff')
+ax.hlines(8.0, 1, len(data.columns), colors=['red'], linestyles=':', label='Axe murder cutoff')
 ax.set_title('RC Server \'Specter\' Album Score Boxplots')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Judges')
@@ -80,7 +105,7 @@ ax.set_xlabel('Songs')
 ax.figure.savefig('box-songs.png')
 
 # %% stacked data boxplot
-ax = data_stack.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True)
+ax = data_stack.to_frame().boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True)
 ax.set_title('RC Server \'Specter\' Entire Dataset Boxplot')
 ax.set_ylabel('Score')
 ax.set_xlabel('Dataset')
