@@ -508,6 +508,8 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
   </tbody>
 </table>
 
+<img src="specter/box-desc-person.png">
+
 ## Song-wise
 
 <table border="1" class="dataframe">
@@ -643,6 +645,8 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
   </tbody>
 </table>
 
+<img src="specter/box-desc-songs.png">
+
 ## Entire dataset
 
 <table border="1" class="dataframe">
@@ -687,6 +691,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
     </tr>
   </tbody>
 </table>
+
 
 # Boxplots
 ## Person-wise
