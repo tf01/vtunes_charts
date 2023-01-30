@@ -5,6 +5,11 @@ import matplotlib.pyplot as plt
 
 # configure
 p.set_option('display.float_format', lambda x: '%.2f' % x)
+import os
+
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
 # simple save to file
 
@@ -39,7 +44,7 @@ write_to_file('data-all.html', data_stack.describe().to_html())
 # %% histograms
 # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html
 ax = data.hist(figsize=(20, 20), sharey=True, sharex=True)
-ax[0][0].get_figure().savefig('hist.png')
+ax[0][0].get_figure().savefig('hist-person.png')
 
 # %% histogram of songs
 ax = data_songs.hist(figsize=(15, 15), sharey=True, sharex=True)
