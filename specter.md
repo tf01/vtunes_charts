@@ -5,10 +5,10 @@
   }
 </style>
 # Specter
-
 Here are the results for Hoshimachi Suisei's *Specter*!
 
 Thanks to all of the participants! This was fun to set up, so hopefully we can do this with more albums in the future.
+
 
 # Raw Scores
 
@@ -35,9 +35,11 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <th>Ruby</th>
       <th>Statsky</th>
       <th>shirpless</th>
+      <th>Maladjusted Platypus</th>
     </tr>
     <tr>
       <th>Song</th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -68,7 +70,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>8</td>
       <td>9.50</td>
       <td>9.00</td>
-      <td>9.50</td>
+      <td>10.00</td>
       <td>10.00</td>
       <td>9.50</td>
       <td>8</td>
@@ -81,6 +83,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>10.00</td>
       <td>7.00</td>
       <td>10.00</td>
+      <td>8.50</td>
     </tr>
     <tr>
       <th>TEMPLATE</th>
@@ -90,7 +93,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>9</td>
       <td>9.50</td>
       <td>8.50</td>
-      <td>10.00</td>
+      <td>9.50</td>
       <td>10.00</td>
       <td>10.00</td>
       <td>9</td>
@@ -99,9 +102,10 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>7.10</td>
       <td>10.00</td>
       <td>8.00</td>
-      <td>8.00</td>
+      <td>7.50</td>
       <td>9.00</td>
       <td>6.00</td>
+      <td>9.50</td>
       <td>10.00</td>
     </tr>
     <tr>
@@ -112,19 +116,20 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>8</td>
       <td>9.00</td>
       <td>7.50</td>
-      <td>6.50</td>
+      <td>5.00</td>
       <td>7.00</td>
       <td>7.50</td>
       <td>8</td>
       <td>9.00</td>
-      <td>10.00</td>
+      <td>11.00</td>
       <td>6.20</td>
       <td>9.50</td>
       <td>9.00</td>
       <td>9.10</td>
       <td>9.50</td>
       <td>8.00</td>
-      <td>9.80</td>
+      <td>9.00</td>
+      <td>6.50</td>
     </tr>
     <tr>
       <th>Aseta Hanamidori</th>
@@ -134,7 +139,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>8</td>
       <td>7.00</td>
       <td>7.00</td>
-      <td>7.50</td>
+      <td>6.50</td>
       <td>8.50</td>
       <td>9.00</td>
       <td>9</td>
@@ -143,10 +148,11 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>8.90</td>
       <td>8.50</td>
       <td>8.50</td>
-      <td>7.00</td>
+      <td>6.50</td>
       <td>8.00</td>
       <td>8.50</td>
-      <td>9.80</td>
+      <td>9.00</td>
+      <td>8.50</td>
     </tr>
     <tr>
       <th>TRUE GIRL SHOW</th>
@@ -156,7 +162,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>7</td>
       <td>8.00</td>
       <td>9.50</td>
-      <td>7.00</td>
+      <td>3.50</td>
       <td>8.50</td>
       <td>8.00</td>
       <td>7</td>
@@ -165,10 +171,11 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>9.80</td>
       <td>9.00</td>
       <td>7.00</td>
-      <td>6.00</td>
+      <td>5.50</td>
       <td>8.50</td>
       <td>9.00</td>
       <td>10.00</td>
+      <td>5.00</td>
     </tr>
     <tr>
       <th>My Happy Transmission</th>
@@ -178,7 +185,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>7</td>
       <td>8.00</td>
       <td>7.50</td>
-      <td>8.50</td>
+      <td>8.00</td>
       <td>7.50</td>
       <td>8.00</td>
       <td>9</td>
@@ -187,10 +194,11 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>5.40</td>
       <td>8.50</td>
       <td>7.00</td>
-      <td>6.50</td>
+      <td>5.50</td>
       <td>7.00</td>
       <td>9.50</td>
-      <td>8.50</td>
+      <td>8.00</td>
+      <td>8.00</td>
     </tr>
     <tr>
       <th>debutante ball</th>
@@ -200,7 +208,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>10</td>
       <td>9.50</td>
       <td>7.00</td>
-      <td>8.00</td>
+      <td>7.50</td>
       <td>9.50</td>
       <td>10.00</td>
       <td>10</td>
@@ -209,10 +217,11 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>9.90</td>
       <td>8.50</td>
       <td>9.00</td>
+      <td>9.20</td>
+      <td>10.00</td>
+      <td>10.00</td>
+      <td>6.00</td>
       <td>8.50</td>
-      <td>10.00</td>
-      <td>10.00</td>
-      <td>9.50</td>
     </tr>
     <tr>
       <th>7days</th>
@@ -222,19 +231,20 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>9</td>
       <td>7.00</td>
       <td>7.50</td>
-      <td>8.00</td>
+      <td>7.00</td>
       <td>8.00</td>
       <td>7.50</td>
       <td>8</td>
       <td>8.00</td>
       <td>9.00</td>
-      <td>8.40</td>
+      <td>8.70</td>
       <td>8.50</td>
       <td>8.00</td>
-      <td>7.50</td>
+      <td>8.80</td>
       <td>8.50</td>
       <td>9.50</td>
-      <td>8.50</td>
+      <td>8.00</td>
+      <td>8.00</td>
     </tr>
     <tr>
       <th>Damn Good Day</th>
@@ -244,19 +254,20 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>9</td>
       <td>7.00</td>
       <td>8.00</td>
-      <td>7.50</td>
+      <td>6.00</td>
       <td>10.00</td>
       <td>9.00</td>
       <td>8</td>
       <td>9.50</td>
       <td>8.50</td>
-      <td>8.70</td>
+      <td>8.90</td>
       <td>8.00</td>
       <td>7.00</td>
       <td>7.50</td>
       <td>8.00</td>
       <td>8.00</td>
       <td>10.00</td>
+      <td>9.00</td>
     </tr>
     <tr>
       <th>soiree</th>
@@ -266,19 +277,20 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>9</td>
       <td>8.00</td>
       <td>8.00</td>
-      <td>7.50</td>
+      <td>6.50</td>
       <td>8.00</td>
       <td>8.50</td>
       <td>7</td>
       <td>8.50</td>
       <td>8.50</td>
-      <td>9.20</td>
+      <td>9.10</td>
       <td>7.00</td>
       <td>6.00</td>
-      <td>7.00</td>
+      <td>6.50</td>
       <td>7.50</td>
       <td>6.50</td>
-      <td>9.50</td>
+      <td>9.00</td>
+      <td>7.00</td>
     </tr>
     <tr>
       <th>Newton</th>
@@ -288,19 +300,20 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>9</td>
       <td>9.00</td>
       <td>7.00</td>
-      <td>7.00</td>
+      <td>4.00</td>
       <td>7.00</td>
       <td>7.00</td>
       <td>8</td>
       <td>7.50</td>
       <td>7.50</td>
-      <td>9.68</td>
+      <td>8.80</td>
       <td>9.00</td>
       <td>9.00</td>
-      <td>8.00</td>
+      <td>7.00</td>
       <td>7.50</td>
       <td>6.00</td>
-      <td>10.00</td>
+      <td>9.00</td>
+      <td>8.00</td>
     </tr>
   </tbody>
 </table>
@@ -332,11 +345,13 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <th>Ruby</th>
       <th>Statsky</th>
       <th>shirpless</th>
+      <th>Maladjusted Platypus</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>count</th>
+      <td>11.00</td>
       <td>11.00</td>
       <td>11.00</td>
       <td>11.00</td>
@@ -365,19 +380,20 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>8.45</td>
       <td>8.32</td>
       <td>7.86</td>
-      <td>7.91</td>
+      <td>6.68</td>
       <td>8.55</td>
       <td>8.55</td>
       <td>8.27</td>
       <td>8.55</td>
-      <td>8.45</td>
-      <td>8.45</td>
+      <td>8.55</td>
+      <td>8.41</td>
       <td>8.68</td>
       <td>8.05</td>
-      <td>7.69</td>
+      <td>7.51</td>
       <td>8.50</td>
       <td>8.00</td>
-      <td>9.60</td>
+      <td>8.86</td>
+      <td>7.91</td>
     </tr>
     <tr>
       <th>std</th>
@@ -387,19 +403,20 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>0.93</td>
       <td>1.03</td>
       <td>0.84</td>
-      <td>1.07</td>
+      <td>2.05</td>
       <td>1.17</td>
       <td>1.04</td>
       <td>0.90</td>
       <td>0.96</td>
-      <td>0.93</td>
-      <td>1.55</td>
+      <td>1.13</td>
+      <td>1.51</td>
       <td>0.78</td>
       <td>1.19</td>
-      <td>1.07</td>
+      <td>1.46</td>
       <td>1.02</td>
       <td>1.45</td>
-      <td>0.58</td>
+      <td>1.19</td>
+      <td>1.34</td>
     </tr>
     <tr>
       <th>min</th>
@@ -409,7 +426,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>7.00</td>
       <td>7.00</td>
       <td>7.00</td>
-      <td>6.50</td>
+      <td>3.50</td>
       <td>7.00</td>
       <td>7.00</td>
       <td>7.00</td>
@@ -418,10 +435,11 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>5.40</td>
       <td>7.00</td>
       <td>6.00</td>
-      <td>6.00</td>
+      <td>5.50</td>
       <td>7.00</td>
       <td>6.00</td>
-      <td>8.50</td>
+      <td>6.00</td>
+      <td>5.00</td>
     </tr>
     <tr>
       <th>25%</th>
@@ -431,19 +449,20 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>8.00</td>
       <td>7.50</td>
       <td>7.25</td>
-      <td>7.25</td>
+      <td>5.50</td>
       <td>7.75</td>
       <td>7.75</td>
       <td>8.00</td>
       <td>7.75</td>
       <td>7.50</td>
-      <td>7.75</td>
+      <td>7.90</td>
       <td>8.50</td>
       <td>7.00</td>
-      <td>7.00</td>
+      <td>6.50</td>
       <td>7.75</td>
       <td>6.75</td>
-      <td>9.50</td>
+      <td>8.50</td>
+      <td>7.50</td>
     </tr>
     <tr>
       <th>50%</th>
@@ -453,7 +472,7 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>9.00</td>
       <td>8.00</td>
       <td>7.50</td>
-      <td>7.50</td>
+      <td>6.50</td>
       <td>8.50</td>
       <td>8.50</td>
       <td>8.00</td>
@@ -465,7 +484,8 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>7.50</td>
       <td>8.50</td>
       <td>8.00</td>
-      <td>9.80</td>
+      <td>9.00</td>
+      <td>8.00</td>
     </tr>
     <tr>
       <th>75%</th>
@@ -475,19 +495,20 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>9.00</td>
       <td>9.25</td>
       <td>8.25</td>
-      <td>8.25</td>
+      <td>7.75</td>
       <td>9.75</td>
       <td>9.25</td>
       <td>9.00</td>
       <td>9.25</td>
       <td>8.75</td>
-      <td>9.69</td>
+      <td>9.40</td>
       <td>9.00</td>
       <td>9.00</td>
-      <td>8.25</td>
+      <td>8.95</td>
       <td>9.25</td>
       <td>9.25</td>
-      <td>10.00</td>
+      <td>9.75</td>
+      <td>8.50</td>
     </tr>
     <tr>
       <th>max</th>
@@ -502,11 +523,12 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <td>10.00</td>
       <td>10.00</td>
       <td>10.00</td>
-      <td>10.00</td>
+      <td>11.00</td>
       <td>9.90</td>
       <td>10.00</td>
       <td>10.00</td>
       <td>9.50</td>
+      <td>10.00</td>
       <td>10.00</td>
       <td>10.00</td>
       <td>10.00</td>
@@ -538,85 +560,85 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
   <tbody>
     <tr>
       <th>count</th>
-      <td>19.00</td>
-      <td>19.00</td>
-      <td>19.00</td>
-      <td>19.00</td>
-      <td>19.00</td>
-      <td>19.00</td>
-      <td>19.00</td>
-      <td>19.00</td>
-      <td>19.00</td>
-      <td>19.00</td>
-      <td>19.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
+      <td>20.00</td>
     </tr>
     <tr>
       <th>mean</th>
-      <td>9.27</td>
-      <td>8.85</td>
-      <td>8.43</td>
-      <td>8.35</td>
+      <td>9.26</td>
+      <td>8.83</td>
+      <td>8.27</td>
+      <td>8.25</td>
+      <td>7.79</td>
+      <td>7.62</td>
+      <td>8.93</td>
       <td>8.15</td>
-      <td>7.71</td>
-      <td>9.13</td>
-      <td>8.15</td>
-      <td>8.48</td>
-      <td>7.98</td>
-      <td>8.04</td>
+      <td>8.45</td>
+      <td>7.83</td>
+      <td>7.74</td>
     </tr>
     <tr>
       <th>std</th>
-      <td>0.83</td>
-      <td>1.21</td>
+      <td>0.84</td>
+      <td>1.19</td>
+      <td>1.37</td>
+      <td>0.91</td>
+      <td>1.66</td>
+      <td>1.14</td>
+      <td>1.22</td>
+      <td>0.72</td>
       <td>1.10</td>
-      <td>0.86</td>
-      <td>1.11</td>
-      <td>1.12</td>
       <td>1.01</td>
-      <td>0.69</td>
-      <td>0.98</td>
-      <td>0.98</td>
-      <td>1.05</td>
+      <td>1.24</td>
     </tr>
     <tr>
       <th>min</th>
       <td>7.00</td>
       <td>6.00</td>
-      <td>6.20</td>
-      <td>7.00</td>
-      <td>6.00</td>
+      <td>5.00</td>
+      <td>6.50</td>
+      <td>3.50</td>
       <td>5.40</td>
-      <td>7.00</td>
-      <td>7.00</td>
+      <td>6.00</td>
       <td>7.00</td>
       <td>6.00</td>
       <td>6.00</td>
+      <td>4.00</td>
     </tr>
     <tr>
       <th>25%</th>
       <td>9.00</td>
-      <td>8.00</td>
-      <td>7.75</td>
+      <td>7.88</td>
+      <td>7.50</td>
       <td>8.00</td>
       <td>7.00</td>
       <td>7.00</td>
       <td>8.50</td>
-      <td>7.75</td>
+      <td>7.88</td>
       <td>8.00</td>
-      <td>7.25</td>
-      <td>7.25</td>
+      <td>7.00</td>
+      <td>7.00</td>
     </tr>
     <tr>
       <th>50%</th>
       <td>9.50</td>
       <td>9.00</td>
-      <td>9.00</td>
+      <td>8.75</td>
       <td>8.50</td>
-      <td>8.50</td>
-      <td>7.50</td>
-      <td>9.50</td>
+      <td>8.25</td>
+      <td>7.75</td>
+      <td>9.35</td>
       <td>8.00</td>
-      <td>8.00</td>
+      <td>8.25</td>
       <td>8.00</td>
       <td>8.00</td>
     </tr>
@@ -624,29 +646,29 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
       <th>75%</th>
       <td>10.00</td>
       <td>10.00</td>
-      <td>9.05</td>
-      <td>8.95</td>
       <td>9.00</td>
-      <td>8.50</td>
+      <td>8.93</td>
+      <td>9.00</td>
+      <td>8.12</td>
       <td>10.00</td>
-      <td>8.50</td>
-      <td>9.25</td>
-      <td>8.75</td>
-      <td>9.00</td>
+      <td>8.72</td>
+      <td>9.12</td>
+      <td>8.62</td>
+      <td>8.85</td>
     </tr>
     <tr>
       <th>max</th>
       <td>10.00</td>
       <td>10.00</td>
-      <td>10.00</td>
+      <td>11.00</td>
       <td>10.00</td>
       <td>10.00</td>
       <td>9.50</td>
       <td>10.00</td>
       <td>9.50</td>
       <td>10.00</td>
-      <td>9.50</td>
-      <td>10.00</td>
+      <td>9.10</td>
+      <td>9.00</td>
     </tr>
   </tbody>
 </table>
@@ -659,25 +681,25 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>0</th>
+      <th>Person</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>count</th>
-      <td>209.00</td>
+      <td>220.00</td>
     </tr>
     <tr>
       <th>mean</th>
-      <td>8.41</td>
+      <td>8.28</td>
     </tr>
     <tr>
       <th>std</th>
-      <td>1.09</td>
+      <td>1.24</td>
     </tr>
     <tr>
       <th>min</th>
-      <td>5.40</td>
+      <td>3.50</td>
     </tr>
     <tr>
       <th>25%</th>
@@ -689,11 +711,11 @@ Thanks to all of the participants! This was fun to set up, so hopefully we can d
     </tr>
     <tr>
       <th>75%</th>
-      <td>9.10</td>
+      <td>9.00</td>
     </tr>
     <tr>
       <th>max</th>
-      <td>10.00</td>
+      <td>11.00</td>
     </tr>
   </tbody>
 </table>
@@ -703,7 +725,7 @@ Good shout on this one Red. It was  interesting to align all of the scores and t
 <img class="plot_figure" src="specter/linear-plot-reg.png"/>
 
 # Boxplots
-Here is *Tommy's quick guide to box and whisker plots*™:
+Here is *Tommy's quick guide to box and whisker plots*:
 - Top and bottom horizontal lines represent the min and max values
   - Also known as *whiskers*
 - Green horizontal line is the median
@@ -717,6 +739,8 @@ Here is *Tommy's quick guide to box and whisker plots*™:
   - e.g. if the bottom whisker is at 6, and the bottom edge of the box is at 7.5, 25% of the data has a value between 6 and 7.5
   - Therefore, the entire 'box' is the middle 50% of the data!
 - If your scores are below the red line, you're dead
+  - o7
+- If your scores are *above* the purple line, you're dead
   - o7
 ## Person-wise
 <img class="plot_figure" src="specter/box-person.png"/>
@@ -737,3 +761,20 @@ Here is *Tommy's quick guide to box and whisker plots*™:
 
 ## Entire dataset
 <img class="plot_figure" src="specter/hist-all.png"/>
+
+# First Impressions vs Rescore
+
+I've still got the old scores, so here are some comparisons:
+
+## Michizure
+
+<img class="plot_figure" src="specter/michi-comparison.png"/>
+
+<img class="plot_figure" src="specter/michi-delta.png"/>
+
+## Debutante Ball
+
+<img class="plot_figure" src="specter/db-comparison.png"/>
+
+<img class="plot_figure" src="specter/db-delta.png"/>
+
