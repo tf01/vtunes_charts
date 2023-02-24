@@ -116,6 +116,13 @@ I've still got the old scores, so here are some comparisons:
 
 <img class="plot_figure" src="specter/db-delta.png"/>
 
+# All First Impressions vs Rescores
+The more differences build up, the larger these ones will be!
+
+<img class="plot_figure" src="specter/all-comparison.png"/>
+
+<img class="plot_figure" src="specter/all-delta.png"/>
+
 ''')
 # close file
 output.close()

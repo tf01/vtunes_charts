@@ -197,6 +197,30 @@ ax.hlines(0, -1, len(combined), colors=['black'], linestyles='-', linewidth=1)
 ax.set_title('Debutante Ball Delta Chart')
 ax.set_ylabel('Score Delta')
 ax.set_xlabel('Judges')
-ax.figure.savefig('michi-delta.png')
+ax.figure.savefig('db-delta.png')
+
+# %% Generate Delta for all songs/people
+# data_stack exists, now just have to do data_stack all
+data_old_stack = data_old.stack(dropna=True)
+data_old_stack.name = 'Old Score'
+data_stack.name = 'Current Score'
+
+con_stack = p.concat([data_stack.to_frame(), data_old_stack.to_frame()], axis=1)
+con_stack_filtered = con_stack[ (con_stack['Current Score'] != con_stack['Old Score']) ].dropna()
+# %% All Changes before/after comparison
+ax = con_stack_filtered.plot(figsize=(15, 15), kind='barh')
+ax.set_title('All New Score Comparison')
+ax.set_ylabel('Scores')
+ax.set_xlabel('Judges')
+ax.figure.savefig('all-comparison.png')
+
+# %% All Delta
+con_stack_delta = (con_stack_filtered['Current Score'] - con_stack_filtered['Old Score'])
+ax = con_stack_delta.plot(figsize=(15, 15), kind='barh', legend=False)
+ax.vlines(0, -1, len(con_stack_filtered), colors=['black'], linestyles='-', linewidth=1)
+ax.set_title('All Delta Chart')
+ax.set_ylabel('Score Delta')
+ax.set_xlabel('Judges')
+ax.figure.savefig('all-delta.png')
 
 # %%
