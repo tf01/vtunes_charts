@@ -72,20 +72,20 @@ ax.set_xlabel('(Song, Judge)')
 ax.set_ylabel('Score')
 ax.set_title('Scores w/ regression lines')
 ax.legend()
-ax.figure.savefig('linear-plot-reg.png')
+ax.figure.savefig('linear-plot-reg.png', bbox_inches='tight')
 
 # %% histograms
 # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html
 ax = data.hist(figsize=(20, 20), sharey=True, sharex=True)
-ax[0][0].get_figure().savefig('hist-person.png')
+ax[0][0].get_figure().savefig('hist-person.png', bbox_inches='tight')
 
 # %% histogram of songs
 ax = data_songs.hist(figsize=(15, 15), sharey=True, sharex=True)
-ax[0][0].figure.savefig('hist-songs.png')
+ax[0][0].figure.savefig('hist-songs.png', bbox_inches='tight')
 
 # %% histogram of everything
 ax = data_stack.hist(figsize=(10, 10))
-ax.figure.savefig('hist-all.png')
+ax.figure.savefig('hist-all.png', bbox_inches='tight')
 
 # %% boxplots
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html#matplotlib.pyplot.boxplot
@@ -95,7 +95,7 @@ ax.set_title('RC Server \'Specter\' Album Score Boxplots')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Judges')
 ax.legend()
-ax.figure.savefig('box-person.png')
+ax.figure.savefig('box-person.png', bbox_inches='tight')
 
 # # %%
 # ax = data.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True, whis=(0, 100))
@@ -110,14 +110,14 @@ ax = data_songs.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=
 ax.set_title('RC Server \'Specter\' Song Score Boxplots')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Songs')
-ax.figure.savefig('box-songs.png')
+ax.figure.savefig('box-songs.png', bbox_inches='tight')
 
 # %% stacked data boxplot
 ax = data_stack.to_frame().boxplot(figsize=(15, 15), return_type='axes', showmeans=True)
 ax.set_title('RC Server \'Specter\' Entire Dataset Boxplot')
 ax.set_ylabel('Score')
 ax.set_xlabel('Dataset')
-ax.figure.savefig('box-all.png')
+ax.figure.savefig('box-all.png', bbox_inches='tight')
 
 # %% description boxplots
 ddtp = data_description.transpose()
@@ -126,7 +126,7 @@ ax = ddtp.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True)
 ax.set_title('RC Server \'Specter\' Data Description Boxplots')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Metrics')
-ax.figure.savefig('box-desc-person.png')
+ax.figure.savefig('box-desc-person.png', bbox_inches='tight')
 
 # # %% description normal plots with labels
 # ax = ddtp.plot.line(figsize=(15, 15), rot=45)
@@ -141,7 +141,7 @@ ax = dsdtp.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True)
 ax.set_title('RC Server \'Specter\' Data Song Description Boxplots')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Metrics')
-ax.figure.savefig('box-desc-songs.png')
+ax.figure.savefig('box-desc-songs.png', bbox_inches='tight')
 
 # %% Load old data
 data_old = p.read_csv('specter-preRC.csv', index_col="Song")
@@ -158,7 +158,7 @@ ax.set_title('Michizure Score Comparison')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Judges')
 ax.legend()
-ax.figure.savefig('michi-comparison.png')
+ax.figure.savefig('michi-comparison.png', bbox_inches='tight')
 # %% Michi Delta
 michi = data.loc['Michizure'].rename('m')
 michi_old = data_old.loc['Michizure'].rename('mp')
@@ -171,7 +171,7 @@ ax.hlines(0, -1, len(combined), colors=['black'], linestyles='-', linewidth=1)
 ax.set_title('Michizure Delta Chart')
 ax.set_ylabel('Score Delta')
 ax.set_xlabel('Judges')
-ax.figure.savefig('michi-delta.png')
+ax.figure.savefig('michi-delta.png', bbox_inches='tight')
 
 # %% DB before/after comparison
 db = data.loc['debutante ball']
@@ -183,7 +183,7 @@ ax = combined.plot(figsize=(15, 15), kind='bar', rot=45)
 ax.set_title('Debutante Ball Score Comparison')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Judges')
-ax.figure.savefig('db-comparison.png')
+ax.figure.savefig('db-comparison.png', bbox_inches='tight')
 
 # %% DB Delta
 db = data.loc['debutante ball'].rename('db')
@@ -197,7 +197,7 @@ ax.hlines(0, -1, len(combined), colors=['black'], linestyles='-', linewidth=1)
 ax.set_title('Debutante Ball Delta Chart')
 ax.set_ylabel('Score Delta')
 ax.set_xlabel('Judges')
-ax.figure.savefig('db-delta.png')
+ax.figure.savefig('db-delta.png', bbox_inches='tight')
 
 # %% Generate Delta for all songs/people
 # data_stack exists, now just have to do data_stack all
@@ -212,15 +212,16 @@ ax = con_stack_filtered.plot(figsize=(15, 15), kind='barh')
 ax.set_title('All New Score Comparison')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Judges')
-ax.figure.savefig('all-comparison.png')
+ax.figure.savefig('all-comparison.png', bbox_inches='tight')
 
 # %% All Delta
 con_stack_delta = (con_stack_filtered['Current Score'] - con_stack_filtered['Old Score'])
 ax = con_stack_delta.plot(figsize=(15, 15), kind='barh', legend=False)
-ax.vlines(0, -1, len(con_stack_filtered), colors=['black'], linestyles='-', linewidth=1)
+for i in np.arange(-3.5, 2, 0.5):
+    ax.vlines(i, -1, len(con_stack_filtered), colors=['black'], linestyles=('-' if i==0 else '--'), linewidth=1)
 ax.set_title('All Delta Chart')
 ax.set_ylabel('Score Delta')
 ax.set_xlabel('Judges')
-ax.figure.savefig('all-delta.png')
+ax.figure.savefig('all-delta.png', bbox_inches='tight')
 
 # %%
