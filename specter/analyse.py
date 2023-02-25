@@ -210,8 +210,8 @@ con_stack_filtered = con_stack[ (con_stack['Current Score'] != con_stack['Old Sc
 # %% All Changes before/after comparison
 ax = con_stack_filtered.plot(figsize=(15, 15), kind='barh')
 ax.set_title('All New Score Comparison')
-ax.set_ylabel('Scores')
-ax.set_xlabel('Judges')
+ax.set_xlabel('Scores')
+ax.set_ylabel('(Song, Judge)')
 ax.figure.savefig('all-comparison.png', bbox_inches='tight')
 
 # %% All Delta
@@ -220,8 +220,8 @@ ax = con_stack_delta.plot(figsize=(15, 15), kind='barh', legend=False)
 for i in np.arange(-3.5, 2, 0.5):
     ax.vlines(i, -1, len(con_stack_filtered), colors=['black'], linestyles=('-' if i==0 else '--'), linewidth=1)
 ax.set_title('All Delta Chart')
-ax.set_ylabel('Score Delta')
-ax.set_xlabel('Judges')
+ax.set_xlabel('Score Delta')
+ax.set_ylabel('(Song, Judge)')
 ax.figure.savefig('all-delta.png', bbox_inches='tight')
 
 # %%
