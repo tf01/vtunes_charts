@@ -2,6 +2,7 @@
 import numpy as np
 import pandas as p
 import matplotlib as plt
+from scipy.optimize import curve_fit
 
 # configure
 p.set_option('display.float_format', lambda x: '%.2f' % x)
@@ -37,6 +38,50 @@ write_to_file('data-all.html', data_stack.to_frame().describe().to_html())
 
 
 # copied from specter ver
+# %% sorted line graph of all scores
+data_stack_sorted = data_stack.sort_values()
+ax = data_stack_sorted.plot(figsize=(15, 15), label='Sorted scores')
+# https://stackoverflow.com/questions/37234163/how-to-add-a-line-of-best-fit-to-scatter-plot
+# estimate first degree polynomial
+xvals = range(len(data_stack_sorted))
+z = np.polyfit(xvals, data_stack_sorted, deg=1)
+p1 = np.poly1d(z)
+z2 = np.polyfit(xvals, data_stack_sorted, deg=2)
+p2 = np.polyval(z2, xvals)
+z3 = np.polyfit(xvals, data_stack_sorted, deg=3)
+p3 = np.polyval(z3, xvals)
+z3 = np.polyfit(xvals, data_stack_sorted, deg=3)
+p3 = np.polyval(z3, xvals)
+# zexp = np.polyfit(xvals, np.log(data_stack_sorted), deg=1)
+# pexp = np.polyval(zexp, xvals)
+# zexpw = np.polyfit(xvals, data_stack_sorted, deg=1, w=np.sqrt(data_stack_sorted))
+# pexpw = np.polyval(zexpw, xvals)
+
+# # %% curve fit
+# popt, pcov = curve_fit(lambda t, a, b, c: a * np.exp(b * t) + c, xvals, data_stack_sorted)
+# a = popt[0]
+# b = popt[1]
+# c = popt[2]
+# # x_fitted = np.linspace(np.min(xvals), np.max(xvals), 100)
+# y_fitted = a * np.exp(b * xvals) + c
+
+
+# ax.axline((0, z[1]), slope=z[0], c='red', linestyle='--', label='1st degree polnomial fit')
+ax.plot(xvals, p1(xvals), c='red', linestyle='--', alpha=0.6, label='1st degree polynomial fit')
+ax.plot(xvals, p2, c='green', linestyle='--', alpha=0.4, label='2nd degree polynomial fit')
+ax.plot(xvals, p3, c='orange', linestyle='--', alpha=0.4, label='3rd degree polynomial fit')
+# ax.plot(xvals, pexpw, c='orange', linestyle='--', label='logarithmic fit')
+# ax.plot(xvals, pexpw, c='blue', linestyle='--', alpha=0.8, label='weighted logarithmic fit')
+# ax.plot(xvals, y_fitted, c='blue', linestyle='--', alpha=0.8, label='curve fit')
+
+ax.set_xlabel('(Song, Judge)')
+ax.set_ylabel('Score')
+ax.set_title('Scores w/ regression lines')
+ax.legend()
+ax.figure.savefig('linear-plot-reg.png', bbox_inches='tight')
+
+
+# %% proper 
 # %% histograms
 # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html
 ax = data.hist(figsize=(20, 20), sharey=True, sharex=True)
