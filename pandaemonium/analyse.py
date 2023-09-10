@@ -19,8 +19,8 @@ def write_to_file(filename, contents):
     file.close()
 
 # %% data
-collection_name = 'Holo27'
-data = p.read_csv('holo27.csv', index_col="Song")
+collection_name = 'Pandæmonium'
+data = p.read_csv('pandaemonium.csv', index_col="Song")
 write_to_file('raw-data.html', data.head(20).to_html())
 
 # %%
