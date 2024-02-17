@@ -20,7 +20,8 @@ def write_to_file(filename, contents):
 
 # %% get data
 # https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
-data = p.read_csv('specter.csv', index_col="Song")
+# data = p.read_csv('specter.csv', index_col="Song")
+data = p.read_csv('specter-postRC.csv', index_col="Song")
 write_to_file('raw-data.html', data.head(20).to_html())
 
 # %%
@@ -89,7 +90,7 @@ ax.figure.savefig('hist-all.png', bbox_inches='tight')
 
 # %% boxplots
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html#matplotlib.pyplot.boxplot
-ax = data.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True)
+ax = data.boxplot(figsize=(15, 15), return_type='axes', rot=70, showmeans=True)
 ax.hlines(8.0, 1, len(data.columns), colors=['red'], linestyles=':', label='Axe murder cutoff')
 ax.set_title('RC Server \'Specter\' Album Score Boxplots')
 ax.set_ylabel('Scores')
@@ -98,7 +99,7 @@ ax.legend()
 ax.figure.savefig('box-person.png', bbox_inches='tight')
 
 # # %%
-# ax = data.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True, whis=(0, 100))
+# ax = data.boxplot(figsize=(15, 15), return_type='axes', rot=70, showmeans=True, whis=(0, 100))
 # ax.set_title('RC Server \'Specter\' Album Score Boxplots (including outliers)')
 # ax.set_ylabel('Scores')
 # ax.set_xlabel('Judges')
@@ -106,7 +107,7 @@ ax.figure.savefig('box-person.png', bbox_inches='tight')
 
 # %% Transpose data and make new boxplot
 # https://note.nkmk.me/en/python-pandas-t-transpose/
-ax = data_songs.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True)
+ax = data_songs.boxplot(figsize=(15, 15), return_type='axes', rot=70, showmeans=True)
 ax.set_title('RC Server \'Specter\' Song Score Boxplots')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Songs')
@@ -122,14 +123,14 @@ ax.figure.savefig('box-all.png', bbox_inches='tight')
 # %% description boxplots
 ddtp = data_description.transpose()
 ddtp.drop(['count', 'std'], inplace=True, axis='columns')
-ax = ddtp.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True)
+ax = ddtp.boxplot(figsize=(15, 15), return_type='axes', rot=70, showmeans=True)
 ax.set_title('RC Server \'Specter\' Data Description Boxplots')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Metrics')
 ax.figure.savefig('box-desc-person.png', bbox_inches='tight')
 
 # # %% description normal plots with labels
-# ax = ddtp.plot.line(figsize=(15, 15), rot=45)
+# ax = ddtp.plot.line(figsize=(15, 15), rot=70)
 # ax.set_title('RC Server \'Specter\' Data Description ???')
 # ax.set_ylabel('Scores')
 # ax.set_xlabel('Metrics')
@@ -137,7 +138,7 @@ ax.figure.savefig('box-desc-person.png', bbox_inches='tight')
 # %% song description boxplots
 dsdtp = data_songs_description.transpose()
 dsdtp.drop(['count', 'std'], inplace=True, axis='columns')
-ax = dsdtp.boxplot(figsize=(15, 15), return_type='axes', rot=45, showmeans=True)
+ax = dsdtp.boxplot(figsize=(15, 15), return_type='axes', rot=70, showmeans=True)
 ax.set_title('RC Server \'Specter\' Data Song Description Boxplots')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Metrics')
@@ -152,7 +153,7 @@ michi_old = data_old.loc['Michizure'].rename('Michizure (previous)')
 
 combined = p.concat([michi_old.to_frame(), michi.to_frame()], axis=1)
 
-ax = combined.plot(figsize=(15, 15), kind='bar', rot=45)
+ax = combined.plot(figsize=(15, 15), kind='bar', rot=70)
 ax.hlines(9.0, -1, len(combined), colors=['purple'], linestyles=':', label='RC Hitlist Threshold')
 ax.set_title('Michizure Score Comparison')
 ax.set_ylabel('Scores')
@@ -166,7 +167,7 @@ michi_old = data_old.loc['Michizure'].rename('mp')
 con = p.concat([michi_old.to_frame(), michi.to_frame()], axis=1)
 combined = (michi - michi_old).to_frame()
 
-ax = combined.plot(figsize=(15, 15), kind='bar', rot=45, legend=False)
+ax = combined.plot(figsize=(15, 15), kind='bar', rot=70, legend=False)
 ax.hlines(0, -1, len(combined), colors=['black'], linestyles='-', linewidth=1)
 ax.set_title('Michizure Delta Chart')
 ax.set_ylabel('Score Delta')
@@ -179,7 +180,7 @@ db_old = data_old.loc['debutante ball'].rename('debutante ball (previous)')
 
 combined = p.concat([db_old.to_frame(), db.to_frame()], axis=1)
  
-ax = combined.plot(figsize=(15, 15), kind='bar', rot=45)
+ax = combined.plot(figsize=(15, 15), kind='bar', rot=70)
 ax.set_title('Debutante Ball Score Comparison')
 ax.set_ylabel('Scores')
 ax.set_xlabel('Judges')
@@ -192,7 +193,7 @@ db_old = data_old.loc['debutante ball'].rename('db_old')
 con = p.concat([db_old.to_frame(), db.to_frame()], axis=1)
 combined = (con['db'] - con['db_old'])
 
-ax = combined.plot(figsize=(15, 15), kind='bar', rot=45, legend=False)
+ax = combined.plot(figsize=(15, 15), kind='bar', rot=70, legend=False)
 ax.hlines(0, -1, len(combined), colors=['black'], linestyles='-', linewidth=1)
 ax.set_title('Debutante Ball Delta Chart')
 ax.set_ylabel('Score Delta')
